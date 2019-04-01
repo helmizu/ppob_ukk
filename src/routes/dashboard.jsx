@@ -27,7 +27,7 @@ var dashRoutes = [
   {
     path: "/pelanggan",
     name: "Pelanggan",
-    icon: "files_paper",
+    icon: "users_single-02",
     component: Pelanggan
   },
   {
