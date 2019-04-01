@@ -14,7 +14,7 @@ import { PanelHeader, FormInputs } from "components";
 
 import { thead, tbody } from "variables/tarif";
 
-class RegularTables extends React.Component {
+class Tarif extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -152,4 +152,4 @@ class RegularTables extends React.Component {
   }
 }
 
-export default RegularTables;
+export default Tarif;

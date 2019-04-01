@@ -6,7 +6,6 @@ const thead = [
     "Biaya Admin",
     "Total",
     "Tanggal",
-    "Status",
     "Verifikasi"
   ];
   const tbody = [
@@ -20,7 +19,6 @@ const thead = [
         "Rp 1000",
         "Rp 21000",
         "22/02/2019",
-        2,
         "1"
       ]
     }

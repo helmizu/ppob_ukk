@@ -1,13 +1,8 @@
 import Dashboard from "views/Dashboard/Dashboard.jsx";
-import Notifications from "views/Notifications/Notifications.jsx";
-import Icons from "views/Icons/Icons.jsx";
-import Typography from "views/Typography/Typography.jsx";
-import TableList from "views/TableList/TableList.jsx";
-import Maps from "views/Maps/Maps.jsx";
-import Upgrade from "views/Upgrade/Upgrade.jsx";
-import UserPage from "views/UserPage/UserPage.jsx";
 import Tarif from "views/Tarif/Tarif.jsx";
 import Pelanggan from "views/Pelanggan/Pelanggan.jsx";
+import Penggunaan from "views/Penggunaan/Penggunaan.jsx";
+import Pembayaran from "views/Pembayaran/Pembayaran.jsx";
 
 var dashRoutes = [
   {
@@ -16,13 +11,11 @@ var dashRoutes = [
     icon: "design_app",
     component: Dashboard
   },
-  { path: "/icons", name: "Icons", icon: "design_image", component: Icons },
-  { path: "/maps", name: "Maps", icon: "location_map-big", component: Maps },
   {
-    path: "/notifications",
-    name: "Notifications",
-    icon: "ui-1_bell-53",
-    component: Notifications
+    path: "/tarif",
+    name: "Tarif",
+    icon: "business_money-coins",
+    component: Tarif
   },
   {
     path: "/pelanggan",
@@ -31,36 +24,17 @@ var dashRoutes = [
     component: Pelanggan
   },
   {
-    path: "/user-page",
-    name: "User Profile",
-    icon: "users_single-02",
-    component: UserPage
+    path: "/penggunaan",
+    name: "Penggunaan",
+    icon: "ui-2_settings-90",
+    component: Penggunaan
   },
   {
-    path: "/extended-tables",
-    name: "Table List",
+    path: "/pembayaran",
+    name: "Pembayaran",
     icon: "files_paper",
-    component: TableList
+    component: Pembayaran
   },
-  {
-    path: "/tarif",
-    name: "Tarif",
-    icon: "files_paper",
-    component: Tarif
-  },
-  {
-    path: "/typography",
-    name: "Typography",
-    icon: "design-2_ruler-pencil",
-    component: Typography
-  },
-  {
-    pro: true,
-    path: "/upgrade",
-    name: "Upgrade to PRO",
-    icon: "objects_spaceship",
-    component: Upgrade
-  },
-  { redirect: true, path: "/", pathTo: "/dashboard", name: "Dashboard" }
+  { redirect: true, path: "/", pathTo: "/home", name: "Client" }
 ];
 export default dashRoutes;

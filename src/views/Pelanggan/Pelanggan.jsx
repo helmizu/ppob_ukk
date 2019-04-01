@@ -14,7 +14,7 @@ import { PanelHeader, FormInputs } from "components";
 
 import { thead, tbody } from "variables/pelanggan";
 
-class RegularTables extends React.Component {
+class Pelanggan extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -234,4 +234,4 @@ class RegularTables extends React.Component {
   }
 }
 
-export default RegularTables;
+export default Pelanggan;
