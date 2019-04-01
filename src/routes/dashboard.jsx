@@ -7,6 +7,7 @@ import Maps from "views/Maps/Maps.jsx";
 import Upgrade from "views/Upgrade/Upgrade.jsx";
 import UserPage from "views/UserPage/UserPage.jsx";
 import Tarif from "views/Tarif/Tarif.jsx";
+import Pelanggan from "views/Pelanggan/Pelanggan.jsx";
 
 var dashRoutes = [
   {
@@ -22,6 +23,12 @@ var dashRoutes = [
     name: "Notifications",
     icon: "ui-1_bell-53",
     component: Notifications
+  },
+  {
+    path: "/pelanggan",
+    name: "Pelanggan",
+    icon: "files_paper",
+    component: Pelanggan
   },
   {
     path: "/user-page",
